@@ -17,8 +17,6 @@ const App = () => {
     const copyTask = [...task]
     copyTask.push({ title, detailinitialval })
     setTask(copyTask)
-    console.log(task);
-
     setTitle('')
     setDetailinitialval('')
   }
@@ -70,13 +68,13 @@ const App = () => {
             return <div key={idx} className="h-52 relative w-40 rounded-xl bg-cover 
                     bg-[url('https://static.vecteezy.com/system/resources/thumbnails/010/793/873/small/a-lined-note-paper-covered-with-transparent-tape-on-a-yellow-background-with-a-white-checkered-pattern-free-png.png')] 
                     text-black p-7">
-              <h1 className=" text-black text-xl font-bold leading-tight">{data.title}</h1>
+              <h1 className=" text-black text-4xl font-bold leading-tight">{data.title}</h1>
               <h2 onClick={()=>{
                 deleteNote(idx)
               }} className="absolute top-8 bg-red-500 right-4 text-white p-1 rounded-full scale-95 cursor-pointer active:scale-80 transition-all">  
                 <X size={10} strokeWidth={1.5} absoluteStrokeWidth />
               </h2>
-              <p className="mt-3 text-gray-700 text-sm font-medium">{data.detailinitialval}</p>
+              <p className="mt-3 text-gray-700 leading-tight text-sm font-semibold">{data.detailinitialval}</p>
             </div>
           })}
         </div>
