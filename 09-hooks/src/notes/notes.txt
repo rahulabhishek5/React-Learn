@@ -1,0 +1,13 @@
+useState - to manage state of a component, like a variable that changes with time or user interaction.
+
+useEffect - used to handle side works (simultaneous works) like DOM manipulation, API call, event handling.
+
+useContext - used store all the data of application in a place, where all components can access it easily. like to access an element we directly access this context without accessing through step-by-step process like props drilling. also for handling gsap animations etc.
+
+useReducer - for complex state management. Like checking if user is logged in or not, and based on that showing different components or nav sections etc.  (shorter version of Redux toolkit)
+
+useCallback - used to prevent unnecessary re-rendering of a component.
+
+useMemo - memoize the result of a expensive computation. Used to prevent unnecessary re-rendering of a component.
+
+useRef - Used to hold mutable values. Used to refer to a value that persists across re-renders without causing re-renders. Like input element reference. used to access DOM.
