@@ -1,3 +1,12 @@
+Types of Routes to learn :
+
+    nested Route
+    Dynamic Route 
+    UseNavigate 
+    404 Page
+
+
+
 Browser Router -> basic route provided by react router dom
                -> A declarative <Router> using the browser History API for client-side routing. It keeps the UI in sync with the URL without a page refresh.
 
