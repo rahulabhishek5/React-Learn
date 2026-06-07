@@ -1,0 +1,21 @@
+Browser Router -> basic route provided by react router dom
+               -> A declarative <Router> using the browser History API for client-side routing. It keeps the UI in sync with the URL without a page refresh.
+
+rahul.com = /
+rahul.com/about = /about
+rahul.com/projects = /projects etc etc
+
+
+
+Hash Router -> used to hide from server
+            -> stores the location in the hash portion of the URL so it is not sent to the server. 
+
+rahul.com = /#/home
+rahul.com/about = /#/about
+rahul.com/projects = /#/projects etc etc
+
+
+Memory Router -> stores all entries in memory.
+
+
+Static Router -> may not navigate to any other Location. This is useful on the server where there is no stateful UI.
